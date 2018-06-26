@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    font-family: 'Exo', sans-serif;
+}
+p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    transform: scaleY(1.09);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: 100px 50px;
+    grid-template-areas: ". secondary ." ". primary . ";
+    box-shadow: 0px 0px 20px rgb(189, 189, 189);
+}
+
+.secondary_menu {
+    grid-area: secondary;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px;
+    grid-template-areas: "brand_image brand_contact";
+}
+
+.secondary_menu p {
+    display: inline-block;
+    align-self: center;
+    justify-self: end;
+    margin: 0px 10px;
+    color: #5b5b5b;
+    font-weight: 500;
+
+}
+
+.secondary_menu img {
+    display: inline-block;
+    width: 100px;
+}
+
+.brand_image {
+    grid-area: brand_image;
+    align-self: center;
+    justify-self: start;
+}
+
+.brand_contact {
+    grid-area: brand_contact;
+    align-self: center;
+    justify-self: end;
+}
+
+.primary_menu {
+    grid-area: primary;
+    justify-self: stretch;
+    align-self: center;
+    border-top: #ebeaea solid 0.5px;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-areas: "nav";
+}
+
+.primary_menu_navs {
+   grid-area: nav;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.primary_menu p {
+    grid-area: primary;
+    display: inline;
+    text-decoration: none;
+    margin: 0px 25px;
+    color: #5b5b5b;
+    text-align: center;
+    transform: scaleY(1.09);
+    
+}
+
+.primary_menu a {
+    text-decoration: none;
+}
+
+.fas {
+    font-size: 10px;
+    color: #5b5b5b;
+    margin: 0px 10px;
+}
