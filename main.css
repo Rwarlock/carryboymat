@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: 'Exo', sans-serif;
 }
+
 p {
     font-size: 16px;
     letter-spacing: 1px;
@@ -31,12 +32,17 @@ p {
     margin: 0px 10px;
     color: #5b5b5b;
     font-weight: 500;
-
+    width:
 }
 
 .secondary_menu img {
     display: inline-block;
-    width: 100px;
+    width: 75px;
+}
+
+.secondary_menu h1 {
+    display: inline;
+    margin: 0px 20px;
 }
 
 .brand_image {
@@ -51,6 +57,17 @@ p {
     justify-self: end;
 }
 
+.brand_contact .fas {
+    font-size: 20px;
+    color: #5b5b5b;
+    margin: 0px 3px 0px 0px;
+}
+
+.brand_contact p {
+    color: #5b5b5b;
+    margin: 0px 10px 0px 0px;
+}
+
 .primary_menu {
     grid-area: primary;
     justify-self: stretch;
@@ -62,11 +79,10 @@ p {
 }
 
 .primary_menu_navs {
-   grid-area: nav;
+    grid-area: nav;
     justify-self: center;
     align-self: center;
 }
-
 
 .primary_menu p {
     grid-area: primary;
@@ -76,7 +92,6 @@ p {
     color: #5b5b5b;
     text-align: center;
     transform: scaleY(1.09);
-    
 }
 
 .primary_menu a {
@@ -88,3 +103,57 @@ p {
     color: #5b5b5b;
     margin: 0px 10px;
 }
+
+.cover {
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-rows: 150px 130px 220px 50px;
+    grid-template-areas: ". cover1 cover1 ." ". cover cover ." ". cover3 . ." ". cover2 cover2   .";
+    background-image: url(images/cover.jpg);
+    background-position: 0% 70%;
+    background-color: #343333;
+}
+
+.banner-heading {
+    grid-area: cover;
+    align-self: start;
+}
+
+.banner-heading h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+    margin: 0px 0px;
+    line-height: 60px;
+    text-shadow: 0px 0px 20px rgb(46, 46, 46);
+}
+
+.banner_paragraph {
+    color: white;
+    grid-area: cover3;
+}
+
+button {
+    color: White;
+    background: #343333;
+    border: 0px;
+    margin: 10px 0px;
+    font-family: Exo;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transform: scaleY(1.1);
+}
+
+button:focus {
+    outline: white auto 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.carousel_button {
+    padding: 15px 25px;
+    font-weight: 500;
+}
+
